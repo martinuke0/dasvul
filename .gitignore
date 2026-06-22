@@ -1,6 +1,13 @@
 node_modules/
 .next/
 .DS_Store
+.vercel/
+
+# scratch / external saves
 site/
 DAS Mobil Service*
 *.htm
+(5) Activity*
+.playwright-mcp/
+.remember/
+*.jpeg
