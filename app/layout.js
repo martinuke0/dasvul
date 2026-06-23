@@ -40,6 +40,12 @@ export const metadata = {
     // brand
     "DAS Mobil Service",
     "vulcanizarebt.ro",
+    "vulcanizarebotosani.ro",
+    "vulcanizare mobila",
+    "vulcanizare mobila das",
+    "vulcanizare nonstop",
+    "pana botosani",
+    "pana nonstop"
   ],
   alternates: { canonical: "/" },
   openGraph: {

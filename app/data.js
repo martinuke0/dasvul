@@ -1,7 +1,7 @@
 export const BRAND = {
   name: "DAS MOBIL SERVICE",
-  tagline: "Vulcanizare mobilă · Botoșani",
-  legal: "DAS Mobil Service SRL · Botoșani",
+  tagline: "Vulcanizare mobilă · Botoșani · NonStop",
+  legal: "DAS Mobil Service SRL · Botoșani · NonStop",
 };
 
 export const CONTACT = {
@@ -31,7 +31,7 @@ export const HERO = {
   titlePre: "Pană pe drum?",
   titlePost: "Venim la tine.",
   description:
-    "Vulcanizare mobilă non-stop în Botoșani — la domiciliu, în parcare sau direct pe traseu. Atelier complet pe roți pentru turisme, autoutilitare, camioane și utilaje. Activitate înregistrată și autorizată de Registrul Auto Român — fiecare intervenție respectă standardele tehnice impuse pentru servicii",
+    "Vulcanizare mobilă non-stop în Botoșani — la domiciliu, în parcare sau direct pe traseu. Atelier complet pe roți pentru turisme, autoutilitare, camioane și utilaje. Activitate înregistrată și autorizată de Registrul Auto Român — fiecare intervenție respectă standardele tehnice impuse pentru servicii.",
   stats: [
     { value: "24/7", label: "Intervenții non-stop" },
     { value: "~30′", label: "Timp mediu sosire" },
