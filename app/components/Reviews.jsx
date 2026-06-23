@@ -38,6 +38,7 @@ export default function Reviews() {
 
   const [page, setPage] = useState(0);
   const paused = useRef(false);
+  const touchStartX = useRef(null);
 
   useEffect(() => {
     const id = setInterval(() => {
@@ -45,6 +46,15 @@ export default function Reviews() {
     }, INTERVAL_MS);
     return () => clearInterval(id);
   }, [pages.length]);
+
+  const onTouchStart = (e) => { touchStartX.current = e.touches[0].clientX; };
+  const onTouchEnd = (e) => {
+    if (touchStartX.current == null) return;
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    touchStartX.current = null;
+    if (Math.abs(dx) < 40) return;
+    setPage((p) => (dx < 0 ? p + 1 : p - 1 + pages.length) % pages.length);
+  };
 
   return (
     <section id="recenzii" className="border-t border-border py-24">
@@ -70,9 +80,11 @@ export default function Reviews() {
         </div>
 
         <div
-          className="mt-12"
+          className="mt-12 touch-pan-y"
           onMouseEnter={() => (paused.current = true)}
           onMouseLeave={() => (paused.current = false)}
+          onTouchStart={onTouchStart}
+          onTouchEnd={onTouchEnd}
         >
           <div className="grid gap-5 md:grid-cols-3" key={page}>
             {pages[page].map((r) => <ReviewCard key={r.name} r={r} />)}

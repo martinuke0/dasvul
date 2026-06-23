@@ -6,7 +6,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/85 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <a href="#top" className="flex items-center gap-3">
-          <img src="/assets/das-logo.png" alt="DAS Mobil Service" className="h-11 w-11 rounded-md object-cover" />
+          <img src="/assets/das-logo-transparent.png" alt="DAS Mobil Service" className="h-11 w-auto object-contain" />
           <div className="leading-tight">
             <div className="font-display text-lg tracking-wide">{BRAND.name}</div>
             <div className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">{BRAND.tagline}</div>
