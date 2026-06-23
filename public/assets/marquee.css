@@ -10,11 +10,18 @@
   width: max-content;
   animation: das-marquee 60s linear infinite;
 }
+.das-marquee--slow .das-marquee-track { animation-duration: 120s; }
 .das-marquee:hover .das-marquee-track { animation-play-state: paused; }
 .das-marquee-track > img { user-select: none; -webkit-user-drag: none; }
 @keyframes das-marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
+}
+.line-clamp-6 {
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 @media (prefers-reduced-motion: reduce) {
   .das-marquee-track { animation: none; }
